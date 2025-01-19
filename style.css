@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{font-size: 3.0em;
+    font-family: "Source Sans Pro", sans-serif;
+    color: white;
+}
+
+h2{font-size: 2.4em;
+    font-family: "Source Sans Pro", sans-serif;
+    margin-top: 12px;
+}
+
+h3{font-size: 2em;
+    font-family: "Source Sans Pro", sans-serif;}
+
+p{ font-size: 1.25em;
+    font-family: "Open Sans", sans-serif}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+header{
+    background-color: #1ecbe1;
+}
+
+header .logo{
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    font-size: 1.5em;
+
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 600px) {
+    header .container {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+@media (min-width: 600px) {
+    header nav {
+        display: flex;
+        flex-direction: row;
+        align-items: right;
+    }
+}
+
+header a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    transition: .3s ease;
+
+}
+
+header a:hover{
+    color: aquamarine;
+    transform: scale(1.2);
+}
+
+#ban {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(img/Ban.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+}
+
+#ban p{
+    color: white;
+}
+
+#servicios{
+    background-color: #464780;
+}
+#servicios .container{
+    color: white;
+    text-align: center;
+    padding: 100px 24px;
+}
+
+
+.terapias .terapia {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    height: auto;
+    width: auto;
+    border-radius: 12px;
+}
+
+@media (min-width: 600px) {
+    .terapias .terapia {
+        height: 400px; /* Mayor altura para pantallas grandes */
+    }
+}
+
+.terapias p, h3{
+    color: white;
+}
+.terapia:first-child {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(img/Acupuntura.jpg);
+    
+    
+}
+.terapia:nth-child(2) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(img/Auriculoterapia.jpg);
+}
+.terapia:nth-child(3) {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url(img/Fitoterapia.jpg);
+}
+
+#contactos {
+    background-color: #1ECBE1
+}
+#contactos .container{
+    text-align: center;
+    padding: 100px 100px;
+}
+
+#contactos .contacto {
+    text-align: left;
+
+}
+
+.contacto a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: .3s ease
+}
+
+.contacto a:hover{
+    color: aquamarine  ;
+    transform: scale(1.2);
+}
+
+svg{
+    transition: .3s ease;
+}
+
+svg:hover{
+    transform: scale(1.2);
+}
+
+footer{
+    height: 20px;
+}
+
+footer p{
+    font-size: .8em;
+}

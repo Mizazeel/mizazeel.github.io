@@ -1,0 +1,12 @@
+{
+    "telefono": "+5535991316033",
+    "email": "albertogorrin5600@gmail.com",
+    "direccion": "Calle Principal #123, Ciudad Ejemplo",
+    "horarios": {
+      "lunes_a_viernes": "9:00 AM - 6:00 PM",
+      "sabado": "10:00 AM - 4:00 PM",
+      "domingo": "Cerrado"
+    },
+    "instagram_username" : "alb.cu"
+  }
+  
