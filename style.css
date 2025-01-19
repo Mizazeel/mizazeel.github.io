@@ -34,8 +34,13 @@ p{ font-size: 1.25em;
     margin: auto;
 }
 
+.subtitle{
+    font-size: .7em;
+}
+
 header{
     background-color: #1ecbe1;
+    height: auto;
 }
 
 header .logo{
@@ -43,13 +48,23 @@ header .logo{
     padding: 25px 30px;
     font-weight: bold;
     font-size: 1.5em;
+}
 
+.logo img{
+    width: 100px;
+    height: 100px;
+}
+
+#subt{
+    font-size: .5em;
 }
 
 header .container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 @media (min-width: 600px) {
