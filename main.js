@@ -5,8 +5,19 @@ document.addEventListener("DOMContentLoaded", async () => {
       const datos = await response.json();
   
       // Insertar el número de teléfono
-      document.getElementById("telefono").textContent = datos.telefono;
-      document.getElementById("telefono-link").href = `https://web.whatsapp.com/send?phone=${datos.telefono}`;
+document.getElementById("telefono").textContent = datos.telefono;
+
+// Detectar si el usuario está en un dispositivo móvil
+const esMovil = /Android|iPhone|iPad|iPod|Windows Phone/i.test(navigator.userAgent);
+
+if (esMovil) {
+  // Usar el esquema para abrir en la app de WhatsApp en móviles
+  document.getElementById("telefono-link").href = `whatsapp://send?phone=${datos.telefono}`;
+} else {
+  // Usar el esquema para abrir en el navegador
+  document.getElementById("telefono-link").href = `https://web.whatsapp.com/send?phone=${datos.telefono}`;
+}
+
   
       // Insertar el correo electrónico
       document.getElementById("email").textContent = datos.email;

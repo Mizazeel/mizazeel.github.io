@@ -39,7 +39,7 @@ p{ font-size: 1.25em;
 }
 
 header{
-    background-color: #1ecbe1;
+    background-color: #76efff;
     height: auto;
 }
 
@@ -100,7 +100,7 @@ header a{
 }
 
 header a:hover{
-    color: aquamarine;
+    color: #464780;
     transform: scale(1.2);
 }
 
@@ -182,7 +182,7 @@ header a:hover{
 }
 
 #contactos {
-    background-color: #1ECBE1
+    background-color: #76efff
 }
 #contactos .container{
     text-align: center;
@@ -202,7 +202,7 @@ header a:hover{
 }
 
 .contacto a:hover{
-    color: aquamarine  ;
+    color: #464780;
     transform: scale(1.2);
 }
 
